@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <title>Simple Bootstrap</title>
+</head>
+
+<body>
+
+    <header>
+        <h3>Introduction</h3>
+    </header>
+
+    <div class="container-fluid">
+        <div class="row">
+
+            <div class="menu col-sm-3">
+                <ul>
+                    <li><a href="index.html">Főoldal</a></li>
+                    <li><a href="kepnezegeto.html">Képnézegető</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="kacsolat.html">Kapcsolat</a></li>
+                </ul>
+            </div>
+
+            <div class="content col-sm-7">
+                <form action="parser.php" method="POST">
+                    <div class="form-row">
+                        <div class="col">
+                            <label for="inputLastName">Vezetéknév</label>
+                            <input type="text" class="form-control" id="inputLastName" placeholder="Vezetéknév"
+                                required>
+                        </div>
+                        <div class="col">
+                            <label for="inputFirstName">Keresztnév</label>
+                            <input type="text" class="form-control" id="inputFirstName" placeholder="Keresztnév"
+                                required>
+                        </div>
+                    </div>
+                    <div class="form-row" style="padding-top:15px;">
+                        <div class="form-group col-2">
+                            <label for="inputMobile"> <img class="glyphH" id="glyphtel"
+                                    src="svg/si-glyph-mobile.svg" />Telefonszám</label>
+                            <input type="tel" class="form-control" id="inputMobile" placeholder="06" size="2" disabled>
+                        </div>
+                        <div class="form-group col-4">
+                            <label for="inputMobile">&nbsp;</label>
+                            <select id="inputMobile" class="form-control" required>
+                                <option selected>Kérlek válassz szolgáltatót...</option>
+                                <option>20</option>
+                                <option>30</option>
+                                <option>70</option>
+                            </select>
+                        </div>
+                        <div class="form-group col-6">
+                            <label for="inputMobile">&nbsp;</label>
+                            <input type="tel" class="form-control" id="inputMobile" required>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Üzenet írása</label> <img class="glyphH"
+                            src="svg/si-glyph-bubble-message-dot.svg" />
+                        <textarea class="form-control" id="message" rows="3"></textarea>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="accept">
+                        <label class="form-check-label" for="accept">Adatkezelési nyilatkozat elfogadása</label>
+                        <img class="glyphH" src="svg/si-glyph-document.svg" />
+                    </div>
+                    <button type="submit" class="btn btn-secondary"
+                        style="text-decoration:none; color:#d2ba87; font-family: 'Great Vibes', cursive; margin-top:10px;">Küldés</button>
+                </form>
+                <hr>
+                <button type="button" class="btn btn-secondary"> <a href="index.html"
+                        style="text-decoration:none; color:#d2ba87; font-family: 'Great Vibes', cursive;">Vissza a
+                        főoldalra</a></button>
+            </div>
+
+            <div class="aside col-sm-2">
+                <figure class="figure">
+                    <img src="./img/ads1.jpg" class="figure-img img-fluid rounded" style="padding-top:15px;" alt="ads1">
+                    <figcaption class="figure-caption">Lorem, ipsum dolor sit amet...</figcaption>
+                </figure>
+                <figure class="figure">
+                    <img src="./img/ads2.jpg" class="figure-img img-fluid rounded" alt="ads2">
+                    <figcaption class="figure-caption">Lorem, ipsum dolor sit amet...</figcaption>
+                </figure>
+                <figure class="figure">
+                    <img src="./img/ads3.jpg" class="figure-img img-fluid rounded" alt="ads3">
+                    <figcaption class="figure-caption">Lorem, ipsum dolor sit amet...</figcaption>
+                </figure>
+            </div>
+        </div>
+
+        <footer class="container-fluid text-center">
+            <span class="text-muted">© 2019 Copyright <span style="color:gainsboro;"> Checkpoint-IT</span> </span>
+        </footer>
+
+</body>
+
+</html>
